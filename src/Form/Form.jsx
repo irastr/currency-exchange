@@ -45,13 +45,13 @@ class Form extends Component {
         <form onSubmit={this.onSubmit} className="form">
 
           <div class="search__input-wrap">
-            <input type="text" name="login" placeholder="Login" onChange={e => this.setState({ login: e.target.value })} />
+            <input type="email" name="email" placeholder="Email" onChange={e => this.setState({ email: e.target.value })} />
             <span className="bar" />
 
 
           </div>
           <div class="search__input-wrap">
-            <input type="email" name="email" placeholder="Email" onChange={e => this.setState({ email: e.target.value })} />
+            <input type="text" name="login" placeholder="Login" onChange={e => this.setState({ login: e.target.value })} />
             <span className="bar" />
 
           </div>
@@ -60,7 +60,7 @@ class Form extends Component {
             <span className="bar" />
 
           </div>
-          <button className="form__submit-btn" type="submit">Submit</button>
+          <button className="form__submit-btn wiggle" type="submit">Submit</button>
 
         </form>
       </div>
@@ -72,3 +72,4 @@ class Form extends Component {
 export default Form;
 
 
+// 
